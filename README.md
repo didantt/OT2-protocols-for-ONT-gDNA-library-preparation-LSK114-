@@ -41,7 +41,7 @@ I have let the pyinstaller promt window stay open together with the tkinter GUI 
 
 The application requires that the laptop and OT2 robot have been set up for ssh file transfer, which I did according to Opentrons instructions: https://support.opentrons.com/s/article/Setting-up-SSH-access-to-your-OT-2
 
-The exe file **must** have access to the ot2_ssh_key by it being in the same working directory. I have already included it in the files and in the right location. In the future, perhaps allow the user to select its location on the PC instead.
+The exe file **must** have access to the ot2_ssh_key by it being in the same working directory. In the future, perhaps allow the user to select its location on the PC instead.
 
 # Improvements & suggestions
 
