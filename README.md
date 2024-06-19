@@ -23,7 +23,8 @@ I really recommend always doing a labware position check the day of the experime
 There is a separate protocol which prepares a serial dilution of calibration gDNA in Qubit Broad Range solution, 'flexstation_stdcurve_prep.py'. You may use this to fit a standard curve equation for calculating the spectral data of the plate reader to concentrations of DNA. (The plate has to be a black(non-opaque) corning well plate that fits both the OT2 labware slots and into the Flexstation plate reader).
 
 In my tests, based on three replicates, I obtained the linear function:
-> y = 0.1151x + 1.1604 <
+> y = 0.1151x + 1.1604
+
 In which x represents the spectral value from the plate reader of a well, and y represents the concentration of DNA in ng/µL.
 You may make new replicates yourself by running 'flexstation_stdcurve_prep.py' on the OT2, and saving the read data from softmax and using that to create your standard curve / fitted line function. Softmax pro has the functionality to calculate a standard function and then use that to calculate the concentration itself, but I recommend creating a function based on multiple runs instead, in which case you also don'y need any specific settings when reading the plate to my knowledge.
 If needed however, the .sda file I used is included.
